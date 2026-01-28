@@ -17,19 +17,49 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="playlist">
-            <h2>Featured Playlists</h2>
-            <div class="playlist-grid">
-                <div class="playlist-card">Playlist 1</div>
-                <div class="playlist-card">Playlist 2</div>
-                <div class="playlist-card">Playlist 3</div>
-            </div>
-        </section>
-    </main>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Browse</h3>
+            <ul>
+                <li><a href="#">Made For You</a></li>
+                <li><a href="#">Charts</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+            <h3>Your Playlists</h3>
+            <ul>
+                <li><a href="#">Chill Hits</a></li>
+                <li><a href="#">Workout</a></li>
+                <li><a href="#">Top 2025</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section class="playlist">
+                <h2>Featured Playlists</h2>
+                <div class="playlist-grid">
+                    <div class="playlist-card">Playlist 1</div>
+                    <div class="playlist-card">Playlist 2</div>
+                    <div class="playlist-card">Playlist 3</div>
+                </div>
+            </section>
+            <section class="trending">
+                <h2>Trending Songs</h2>
+                <ul class="song-list">
+                    <li>1. Song Alpha - Artist A</li>
+                    <li>2. Song Beta - Artist B</li>
+                    <li>3. Song Gamma - Artist C</li>
+                    <li>4. Song Delta - Artist D</li>
+                </ul>
+            </section>
+        </main>
+    </div>
     <footer>
         <div class="player">
+            <button title="Previous">⏮️</button>
+            <button title="Play">▶️</button>
+            <button title="Next">⏭️</button>
             <span>Now Playing: Song Title - Artist</span>
+            <input type="range" min="0" max="100" value="30" class="progress-bar">
         </div>
     </footer>
 </body>
